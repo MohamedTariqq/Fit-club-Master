@@ -1,0 +1,76 @@
+/* Programs Header */
+.programs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+.programs-header {
+  display: flex;
+  gap: 5rem;
+  font-weight: bold;
+  font-size: 3rem;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+/* Programs categories */
+.programsCategories {
+  display: flex;
+  gap: 1rem;
+}
+.category {
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  gap: 1rem;
+  padding: 2rem;
+  margin: 0.5rem;
+  color: #fff;
+  justify-content: space-between;
+}
+.category > :nth-child(1) {
+  width: 2rem;
+  height: 2rem;
+  fill: #fff;
+}
+.category > :nth-child(2) {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.category > :nth-child(3) {
+  font-size: 0.9rem;
+  line-height: 25px;
+}
+.joinNow {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.joinNow > img {
+  width: 1rem;
+}
+.category:hover {
+  background: var(--planCard);
+  cursor: pointer;
+}
+
+/* Responsive Mobile */
+
+@media screen and (max-width: 768px) {
+  .programs-header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    margin-top: 2rem;
+  }
+  .programsCategories {
+    flex-direction: column;
+  }
+}
